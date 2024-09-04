@@ -33,7 +33,7 @@
 
 .card img {
   max-width: 100%;
-  height: auto;
+  height: 20vw;
   border-radius: 4px;
   margin-bottom: 15px;
 }
@@ -55,6 +55,24 @@ li {
 }
 
 
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 10px;
+  position: relative;
+}
+
 .navbar-button {
   background-color: #555;
   color: #fff;
@@ -68,4 +86,26 @@ li {
 
 .navbar-button:hover {
   background-color: #777;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
 }
