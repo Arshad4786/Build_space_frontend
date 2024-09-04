@@ -2,7 +2,10 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Navbar from './navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MensClothing from './mens.js'; 
+import MensClothing from './router/mens.js'; 
+import Jewelery from './router/jewelery.js';
+import Electronics from './router/electronics.js';
+import WomenClothing from './router/womens.js';
 
 function App() {
   const [cards, setCard] = useState([]);
@@ -40,6 +43,12 @@ function App() {
             }
           />
           <Route path="/mens-clothing" element={<MensClothing cards={cards} />} />
+          <Route path="/jewelery" element={<Jewelery cards={cards} />} />
+          <Route path="/electronics" element={<Electronics cards={cards} />} />
+          <Route path="/womens-clothing" element={<WomenClothing cards={cards} />} />
+
+
+
         </Routes>
       </Router>
     </>
